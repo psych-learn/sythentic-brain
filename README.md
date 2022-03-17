@@ -1,2 +1,0 @@
-# sythentic-brain
-Synthetic 
