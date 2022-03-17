@@ -2,16 +2,16 @@
 
 A Psychological signal augmentation library.
 
-Objective:
----
+## Objective: 
 To develop the augmentation library for EEG.
 
 ### Datasets:
+---
 1. DEAP
 2. SEED
 
-
 ### Experiments
+---
 - Baseline Classifier
     -!(EEGNet)[https://github.com/vlawhern/arl-eegmodels]               
 - Similar Samples Augmentation
@@ -21,6 +21,7 @@ To develop the augmentation library for EEG.
 4. Conditional GAN -->
 
 ### Experiment Design:
+----
 * metric: f1-score
 
 1. Leave one-out cross validation
@@ -39,6 +40,7 @@ To develop the augmentation library for EEG.
 3. Report Test Number
 
 ### Platform
+---
 1. Develop either on your laptop or google colab
 2. Run on bigger GPUs
 3. Pytorch
@@ -46,9 +48,17 @@ To develop the augmentation library for EEG.
 5. Weights and Biases only for Logging
 
 
-### Date: March 17, 2022
+## Date: March 17, 2022
+---
+
+### TODOS:
+---
 - [ ] Add to the corresponding git repo - Chirag
 - [ ] Create W&B account and add to the project - Chirag
 
 - [ ] Download and explore the DEAP dataset - Adaya and Himalaya
 - [ ] Baseline Results to be pushed to the W&B Project as a reference - Adaya and Himalaya
+
+- [ ] WGAN -> Himalaya
+- [ ] DCGAN -> Adaya
+- [ ] cGAN -> Chirag
