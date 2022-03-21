@@ -14,16 +14,27 @@ authors = ["Chirag Ahuja <cahuja1992@gmail.com>"]
 psykit-augmentor = 'psykit_augment.cli:run'
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.8,<3.11"
 Sphinx = "^4.4.0"
 sphinx-rtd-theme = "^1.0.0"
 numpy = "^1.22.3"
 mne = "^0.24.1"
 pooch = "^1.6.0"
 tqdm = "^4.63.0"
+tensorflow = "^2.8.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.4"
 
 [tool.poetry.extras]
 docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon"]
+
+[tool.black]
+line-length = 90
+target-version = ["py38"]
+
+[tool.isort]
+src_paths = ["eeg_models"]
+profile = "black"
+line_length = 90
+lines_after_imports = 2

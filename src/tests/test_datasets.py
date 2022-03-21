@@ -1,4 +1,5 @@
 import unittest
+import mne
 from psykit_augment.datasets import EPFLP300, BNCI2014004
 
 
