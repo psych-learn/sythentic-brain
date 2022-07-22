@@ -9,3 +9,4 @@ from .bnci import (
     BNCI2015003,
     BNCI2015004,
 )
+from .seed import SEED

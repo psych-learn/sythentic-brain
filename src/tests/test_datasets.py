@@ -1,10 +1,16 @@
 import unittest
 import mne
-from psykit_augment.datasets import EPFLP300, BNCI2014004
+from psykit_augment.datasets import EPFLP300, BNCI2014004, SEED
 
 
 class TestDatasets(unittest.TestCase):
     def run_dataset(self, dataset, subj=(0, 2)):
+        """
+
+        :param dataset:
+        :param subj:
+        :return:
+        """
         def _get_events(raw):
             stim_channels = mne.utils._get_stim_channel(None, raw.info, raise_error=False)
             if len(stim_channels) > 0:
@@ -46,3 +52,6 @@ class TestDatasets(unittest.TestCase):
     @unittest.skip("takes time")
     def test_bnci_0004(self):
         self.run_dataset(BNCI2014004)
+
+    def test_seed(self):
+        self.run_dataset(SEED)
